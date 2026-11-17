@@ -1,0 +1,68 @@
+<mvc:View controllerName="com.demo.sapui5application.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+    
+    <Page id="employeepage" title="employee application1">
+       <content>
+          
+          <ObjectHeader id="employeeheader" icon="sap-icon://employee" title="Sunny" number="1000000" numberUnit="INR" backgroundDesign="Solid">
+              <attributes>
+                 <ObjectAttribute id="employeeAttribute" title="Employee ID" text="202601"></ObjectAttribute>
+                 <ObjectAttribute id="desiginationAttribute" title="Desigination" text="Developer"></ObjectAttribute>
+                 <ObjectAttribute id="skillAttribute" title="Skill" text="SapUI5/fiori"></ObjectAttribute>
+              </attributes>
+              <statuses>
+                  <ObjectStatus id="employeeStatus" text="CONTRACT EMPLOYEE" state="Success" inverted="true"></ObjectStatus>
+              </statuses>
+          </ObjectHeader>
+          <IconTabBar id="employeeTabBar" >
+             <items>
+                <IconTabFilter  id="employeeDetailsTab" icon="sap-icon://employee" text="Employee deatils">
+                  <f:SimpleForm   id="employeeDetailsForm" title="Employee Details" editable="true" layout="ResponsiveGridLayout" labelSpanXL="2" labelSpanL="2" labelSpanM="2" emptySpanXL="4" emptySpanL="4" emptySpanM="4">
+                     <f:content>
+                        <Label id="employeeIdLabel" text="Employee Id"></Label>
+                        <Input id="employeeIdInput"></Input>
+                        <Label  id="nameLabel" text="Name"></Label>
+                        <Input id="nameInput"></Input>
+                        <Label id="designationLabel" text="Designation"></Label>
+                        <Input id="designationInput"></Input>
+                        <Label id="skillLabel" text="Skill"></Label>
+                        <Input id="skillInput"></Input>
+                        <Label id="emailLabel" text="Email ID"></Label>
+                        <Input id="emailInput"></Input>
+                        <Label id="statusLabel" text="Status"></Label>
+                        <Input id="statusInput"></Input>
+
+                     </f:content>
+                  </f:SimpleForm>
+                </IconTabFilter>
+
+                <IconTabFilter id="employeeSalaryTab" icon="sap-icon://employee" text="Employee Salary">
+                  <f:SimpleForm  id="employeeSalaryForm" title="Employee Salary" editable="true" layout="ResponsiveGridLayout" labelSpanXL="2" labelSpanL="2" labelSpanM="2" emptySpanXL="4" emptySpanL="4" emptySpanM="4">
+                     <f:content>
+                        <Label id="salaryEmployeeIdLabel" text="Employee Id"></Label>
+                        <Input id="salaryEmployeeIdInput"></Input>
+                         <Label id="salaryNameLabel" text="Name"></Label>
+                        <Input id="salaryNameInput" ></Input>
+                         <Label id="salaryDesignationLabel" text="Designation"></Label>
+                        <Input id="salaryDesignationInput" ></Input>
+                         <Label id="salaryLabel" text="Salary"></Label>
+                        <Input id="salaryInput"></Input>
+                     
+                     </f:content>
+                  </f:SimpleForm>
+                  </IconTabFilter>
+             </items>
+          </IconTabBar>
+          
+                    
+       </content>
+       <footer>
+          <Bar id="employeeFooterBar">  
+            
+          </Bar>
+       </footer>
+    </Page>
+</mvc:View>

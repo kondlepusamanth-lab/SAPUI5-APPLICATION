@@ -1,0 +1,10 @@
+<mvc:View controllerName="com.demo.sapui5application.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="employee application2" showNavButton="true" navButtonPress="onBackPress">
+        <content>
+            <Button id="backButton" text="Back to 1st view" press="onBackpress"></Button>
+            
+        </content>
+    </Page>
+</mvc:View>
